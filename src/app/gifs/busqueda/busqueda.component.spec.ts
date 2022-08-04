@@ -24,4 +24,11 @@ describe('BusquedaComponent', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
+
+  it('should render title', () => {
+    fixture = TestBed.createComponent(BusquedaComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.content span').textContent).toContain('busqueda app is running!');
+  })
 });
