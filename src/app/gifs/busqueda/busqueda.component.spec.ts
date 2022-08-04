@@ -29,6 +29,6 @@ describe('BusquedaComponent', () => {
     fixture = TestBed.createComponent(BusquedaComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('busqueda app is running!');
+    expect(compiled.querySelector('.id').textContent).toContain('busqueda app is running!');
   })
 });
