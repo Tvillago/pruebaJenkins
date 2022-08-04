@@ -20,6 +20,8 @@ describe('BusquedaComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    fixture = TestBed.createComponent(BusquedaComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
   });
 });
